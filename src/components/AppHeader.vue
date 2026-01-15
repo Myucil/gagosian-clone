@@ -2,7 +2,7 @@
   <header class="header" :class="{ 'header--scrolled': isScrolled }">
     <div class="header__container">
       <router-link to="/" class="header__logo">
-        {{ isScrolled || !isHome ? 'Gagosian' : 'GAGOSIAN' }}
+        Gagosian
       </router-link>
 
       <nav class="header__nav">
