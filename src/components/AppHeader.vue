@@ -55,12 +55,9 @@ onUnmounted(() => {
   right: 0;
   z-index: 1000;
   height: var(--header-height);
-  transition: all var(--transition-base);
-}
-
-.header--scrolled {
   background: var(--color-white);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-base);
 }
 
 .header__container {
@@ -82,9 +79,6 @@ onUnmounted(() => {
   transition: color var(--transition-fast);
 }
 
-.header:not(.header--scrolled) .header__logo {
-  color: var(--color-white);
-}
 
 .header__nav {
   display: flex;
@@ -98,26 +92,17 @@ onUnmounted(() => {
   transition: color var(--transition-fast);
 }
 
-.header:not(.header--scrolled) .header__link {
-  color: rgba(255, 255, 255, 0.8);
-}
 
 .header__link:hover {
   color: var(--color-black);
 }
 
-.header:not(.header--scrolled) .header__link:hover {
-  color: var(--color-white);
-}
 
 .header__link.router-link-active {
   font-weight: 600;
   color: var(--color-black);
 }
 
-.header:not(.header--scrolled) .header__link.router-link-active {
-  color: var(--color-white);
-}
 
 .header__actions {
   display: flex;
